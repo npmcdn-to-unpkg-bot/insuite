@@ -1,0 +1,6 @@
+# Directory for node_modules
+node_modules
+typings
+
+#Ignore this files
+.DS_Store

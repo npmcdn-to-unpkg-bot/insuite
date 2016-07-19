@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mircom Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link rel="stylesheet" href="materialize/css/custom.css">
+    <link href="materialize/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="materialize/js/materialize.js"></script>
+
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Top Menu -->
+    <div id="top-menu" class="row">
+        <div class="col s12">
+            <div>
+                <ul class="left">
+                    <li>
+                        <a class="dropdown-button" href="#!" data-activates="dropdown1">
+                            <i class="material-icons">more_vert</i>
+                            <i class="mdi-navigation-arrow-drop-down right"></i></a>
+                    </li>
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="messages.html">Messages</a></li>
+                        <li><a href="cameras.html">Cameras</a></li>
+                        <li><a href="front_door_calling.html">Intercom - income call</a></li>
+                        <li><a href="call_another_insuite.html">Intercom - call another insuite</a></li>
+                        <li><a href="conected_another_insuite.html">Intercom - connected to another insuite</a></li>
+                        <li><a href="dial_pad.html">Intercom - Dial Pad</a></li>
+
+                    </ul>
+                </ul>
+                <a href="#" data-activates="slide-out" class="button-collapse">
+                    <i class="mdi-navigation-menu"></i>
+                </a>
+            </div>
+            <div class="title">Intercom</div>
+        </div>
+    </div>
+
+
+    <div id="rowNavButtons" class="row">
+        <div class="col s12 text-align-center">
+            <a href="messages.html"><img class="responsive-img" src="materialize/img/btnMsgSelected.png"></a>
+            <a href="cameras.html"><img class="responsive-img" src="materialize/img/btnCameras.png"></a>
+            <a href="intercom.html"><img class="responsive-img" src="materialize/img/btnIntercom.png"></a>
+            <img class="responsive-img" src="materialize/img/btnDevices.png">
+            <img class="responsive-img" src="materialize/img/btnSecurity.png">
+            <img class="responsive-img" src="materialize/img/btnRequests.png">
+        </div>
+    </div>
+
+
+    <div class="row">
+        <!-- Left Column -->
+        <div id="left-gap" class="col s2 hide-on-small-only">
+            <span class="flow-text">&nbsp;</span>
+        </div>
+        <!-- Content Area -->
+        <div id="content-display" class="col s8 force-max-width">
+            <div class="row">
+                <div id="content-left" class="col s12" style="display:none;">
+                    <ul class="collection">
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle">business</i>
+                            <span class="title">Elevator Maintenance Scheduled for Friday 21 Dec.</span>
+                            <p>8:34 AM </p>
+
+                            <p>MAY 31, 2016</p>
+                            <!--<a href="#!" class="secondary-content"><i class="material-icons">more_vert</i></a>-->
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle">notifications</i>
+                            <span class="title">Title</span>
+                            <p>First Line <br> Second Line
+                            </p>
+                            <!--<a href="#!" class="secondary-content"><i class="material-icons">more_vert</i></a>-->
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle green">call_missed</i>
+                            <span class="title">Title</span>
+                            <p>First Line <br> Second Line
+                            </p>
+                            <!--<a href="#!" class="secondary-content"><i class="material-icons">more_vert</i></a>-->
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle red">done</i>
+                            <span class="title">Title</span>
+                            <p>First Line <br> Second Line
+                            </p>
+                            <!--<a href="#!" class="secondary-content"><i class="material-icons">more_vert</i></a>-->
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="content-right" class="col s12">
+                    <div class="row">
+                        <div id="msg_header" class="col s12">
+                            <div><i class="material-icons">keyboard_backspace</i></div>
+                            <div>Messages</div>
+                            <div><i class="material-icons">delete</i></div>
+
+                        </div>
+                        <div class="row">
+                            <div id="msg_icon" class="col s1"><i class="material-icons">notifications</i></div>
+                            <div id="msg_from" class="col s10">Property Management</div>
+                            <div class="col s1"></div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col s1">&nbsp;</div>
+                            <div id="msg_timestamp" class="col s10">8:34 AM May 27, 2016</div>
+                            <div class="col s1">&nbsp;</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col s1">&nbsp;</div>
+                            <div id="msg_title" class="col s10">Building Alert</div>
+                            <div class="col s1">&nbsp;</div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col s1">&nbsp;</div>
+                            <div id="msg_body" class="col s10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis ligula ac libero lacinia varius
+                                vulputate eget orci. Nunc convallis dignissim pulvinar. Vivamus luctus purus eu libero gravida,
+                                dapibus ullamcorper sem mollis. Donec semper nibh sed consequat facilisis. Proin laoreet
+                                luctus elit, sed porta eros cursus vel. Integer iaculis, ante sit amet feugiat interdum,
+                                augue nunc congue ante, sed rhoncus magna augue auctor eros. Aliquam id neque et lacus eleifend
+                                fermentum sodales eget sem. Sed sollicitudin maximus elit nec blandit.
+                            </div>
+                            <div class="col s1">&nbsp;</div>
+                        </div>
+
+
+
+
+
+                        <!--<div id="msg_body" class="col s12">
+                             date time
+                            </div>
+                            <div id="msg_body" class="col s12">
+                             Text
+                            </div>-->
+
+
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div id="right-gap" class="col s2 hide-on-small-only">
+            <span class="flow-text">&nbsp;</span>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
