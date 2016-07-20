@@ -1,0 +1,72 @@
+ <!-- Top Menu -->
+    <div id="top-menu" class="row">
+        <div class="col s12">
+            <div class="right">
+                <ul class="right">
+                    <li>
+                        <a class="dropdown-button" href="#!" data-activates="dropdown1">
+                            <i class="material-icons">more_vert</i>
+                            <i class="mdi-navigation-arrow-drop-down right"></i></a>
+                    </li>
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="messages.html">Messages</a></li>
+                        <li><a href="cameras.html">Cameras</a></li>
+                        <li><a href="front_door_calling.html">Intercom - income call</a></li>
+                        <li><a href="call_another_insuite.html">Intercom - call another insuite</a></li>
+                        <li><a href="call_another_insuite.html">Intercom - call another insuite</a></li>
+                    </ul>
+                </ul>
+                <a href="#" data-activates="slide-out" class="button-collapse">
+                    <i class="mdi-navigation-menu"></i>
+                </a>
+            </div>
+            <div class="title left">Intercom</div>
+            <div class="title icons right"><i class="material-icons">question_answer</i></div>
+            <div class="title icons right"><i class="material-icons">videocam</i></div>
+            <div class="title icons right"><i class="material-icons">dialpad</i></div>
+        </div>
+    </div>
+
+           <div class="row">
+        <!-- Left Column -->
+        <div id="left-gap" class="col s2 hide-on-small-only">
+            <span class="flow-text">&nbsp;</span>
+        </div>
+
+        <!-- Content Area -->
+        <div id="content-display" class="col s8 force-max-width">
+            <div class="row">
+                <div id="content-left" class="col s12 ">
+                    <!--*********************
+                        Camera Opened        
+                    *********************-->
+                    <div class="row">
+                        <div class="col s12 camera-view">
+                            <div class="card-panel">
+
+                                <img class="responsive-img" src="materialize/img/placeholder_600x400.svg">
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--*********************
+                        Camera's list        
+                    *********************-->
+                    <div class="row">
+                        <div class="col s12 cameras" >
+                            
+                            <div class="col s6 m4 l3" *ngFor="let camera of cameras">
+                                <div class="card-panel ">
+                                    <a href="{{camera.href}}"><img class="responsive-img" src="{{camera.src}}"> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Right Column -->
+        <div id="right-gap" class="col s2 hide-on-small-only">
+            <span class="flow-text">&nbsp;</span>
+        </div>
+    </div>

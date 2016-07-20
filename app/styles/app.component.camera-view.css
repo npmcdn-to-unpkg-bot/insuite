@@ -1,0 +1,20 @@
+        /*********************
+            Classes Exclusive 
+            for Camera_view page
+        **********************/
+
+        
+        .camera-view .card-panel {
+            transition: none;
+            padding: 0 !important;
+            margin: 0 !important;
+            border-radius: 0px;
+            background-color: #fff;
+            box-shadow: none !important;
+            /*height: 600px;*/
+            position: relative;
+        }
+        
+        .camera-view .card-panel img {
+            width: 100%;
+        }

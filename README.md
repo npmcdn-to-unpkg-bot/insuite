@@ -148,7 +148,7 @@ git add
 ```
 
 ```bash
-git commit -"message"
+git commit -m "message"
 ```
 
 ```bash
